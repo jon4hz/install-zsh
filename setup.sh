@@ -84,7 +84,7 @@ do
   
   if [ ${chtheme,,} == "y" ]
   then
-    echo "You can find all Themes on https://github.com/robbyrussell/oh-my-zsh/wiki/Themes"
+    echo "You can find all themes on https://github.com/robbyrussell/oh-my-zsh/wiki/Themes"
     read -p "Which theme do you want to use? " themename
     sed -i -e 's/ZSH_THEME=.*/ZSH_THEME=\"$themename\"/g' ~/.zshrc
     
