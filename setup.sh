@@ -38,6 +38,7 @@ do
   if [ ${installomz,,} == "y" ]
   then
     apt install fonts-powerline
+    (( x++ ))
   elif [ ${installomz,,} == "n" ]
   then
     echo "Script execution finished successfully!"
@@ -87,7 +88,7 @@ do
     echo "You can find all themes on https://github.com/robbyrussell/oh-my-zsh/wiki/Themes"
     read -p "Which theme do you want to use? " themename
     sed -i -e 's/ZSH_THEME=.*/ZSH_THEME=\"$themename\"/g' ~/.zshrc
-    
+    (( x++ ))
   elif [ ${chtheme,,} == "n" ]
   then
     echo "Script execution finished successfully!"
@@ -98,3 +99,4 @@ do
   
   fi
 done
+echo "Script execution finished successfully!"
