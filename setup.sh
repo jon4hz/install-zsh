@@ -64,7 +64,7 @@ then
     
     elif [ ${installgit,,} == "n" ]
     then
-      echo "Operation cannot be completed without git. Please rerun the script or manualy install git!"
+      echo "Operation cannot be completed without git. Please rerun the script or install git manually!"
       exit
     
     else
