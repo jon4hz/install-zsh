@@ -100,3 +100,22 @@ do
   fi
 done
 echo "Script execution finished successfully!"
+
+x=1
+while [ $x == 1 ]
+do
+  read -p "Do you want to reboot now? [y/n]: " rebootnow
+  
+  if [ ${rebootnow,,} == "y" ]
+  then
+    reboot
+  elif [ ${rebootnow,,} == "n" ]
+  then
+    echo "Your System doesnt reboot. We recommend rebooting to apply all changes!"
+    exit
+  
+  else
+    echo "Unknown input"
+  
+  fi
+done
